@@ -1,8 +1,8 @@
 let index = 0;
 
 function moveCarousel(step) {
-    const slider = document.getElementById("carousel");
     const items = document.querySelectorAll(".carousel-item");
+    const slider = document.getElementById("carousel");
 
     index += step;
 
@@ -12,6 +12,4 @@ function moveCarousel(step) {
     slider.style.transform = `translateX(${-index * 100}%)`;
 }
 
-setInterval(() => {
-    moveCarousel(1);
-}, 3500);
+setInterval(() => moveCarousel(1), 4000);
