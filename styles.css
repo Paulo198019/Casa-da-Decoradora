@@ -1,31 +1,17 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Arial", sans-serif;
-}
-
-body {
-    background: #f3f3f3;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* ✅ HERO PREMIUM */
+/* HERO */
 .hero {
     text-align: center;
-    padding: 120px 20px 80px 20px;
+    padding: 120px 20px;
     background: white;
 }
 
 .hero-logo {
-    width: 520px;          /* ✅ LOGO GRANDE E PROPORCIONAL */
+    width: 520px;
     margin-bottom: 40px;
 }
 
 .hero-title {
-    font-size: 40px;       /* ✅ OPÇÃO A */
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 25px;
     color: #333;
@@ -34,31 +20,37 @@ body {
 .hero-sub {
     max-width: 1000px;
     margin: 0 auto;
-    font-size: 32px;        /* ✅ PEDIDO ATUAL */
+    font-size: 32px;
     opacity: 0.95;
     line-height: 1.6;
 }
 
-.btn-whatsapp {
-    background: #25d366;
+.btn-whatsapp, .btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     padding: 18px 42px;
-    display: inline-block;
-    margin-top: 35px;
     border-radius: 10px;
     font-size: 22px;
-    color: white;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
-/* ✅ CARROSSEL PREMIUM */
+.btn-whatsapp { background: #25d366; }
+.btn-instagram { background: #d6249f; }
+
+.icon-btn {
+    width: 28px;
+    height: 28px;
+}
+
+/* CARROSSEL */
 .carousel-container {
     width: 90%;
-    margin: 60px auto;
+    margin: 50px auto;
     overflow: hidden;
     border-radius: 20px;
-    position: relative;
-    background: #fff;
 }
 
 .carousel {
@@ -68,7 +60,7 @@ body {
 
 .carousel-item img {
     width: 100%;
-    height: 360px;              /* ✅ TAMANHO ELEGANTE */
+    height: 360px;
     object-fit: cover;
 }
 
@@ -76,129 +68,29 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #00000088;
+    background: #0008;
     border: none;
     padding: 12px 18px;
     color: white;
+    font-size: 24px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 24px;
 }
 
 .prev { left: 20px; }
 .next { right: 20px; }
 
-/* ✅ BENEFÍCIOS */
-.benefits {
-    padding: 60px 20px;
-    background: white;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.benefits h2 {
-    font-size: 34px;
-}
-
-.benefits-list li {
-    font-size: 26px;
-    margin: 12px 0;
-}
-
-/* ✅ EVENTOS */
-.event-types {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.event-grid {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-}
-
-.event-card {
-    background: white;
-    padding: 25px;
-    font-size: 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* ✅ PORTFÓLIO */
-.portfolio {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.portfolio h2 {
-    font-size: 34px;
-}
-
+/* PORTFÓLIO */
 .portfolio-grid {
     margin-top: 40px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .portfolio-grid img {
     width: 100%;
-    height: 260px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 14px;
-    transition: 0.3s ease;
-}
-
-.portfolio-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* ✅ CTA FINAL */
-.cta-final {
-    padding: 70px 20px;
-    background: white;
-    text-align: center;
-    margin-top: 60px;
-}
-
-.cta-final h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.cta-final p {
-    font-size: 26px;
-    opacity: 0.9;
-}
-
-.cta-buttons {
-    margin-top: 35px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.btn-instagram {
-    background: #d6249f;
-    padding: 18px 42px;
-    border-radius: 10px;
-    font-size: 22px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* ✅ RESPONSIVO */
-@media (max-width: 768px) {
-    .hero-logo { width: 380px; }
-    .hero-title { font-size: 32px; }
-    .hero-sub { font-size: 24px; }
-
-    .carousel-item img { height: 260px; }
-
-    .portfolio-grid img { height: 220px; }
-
-    .btn-whatsapp, .btn-instagram { width: 100%; text-align: center; }
+    border-radius: 12px;
 }
