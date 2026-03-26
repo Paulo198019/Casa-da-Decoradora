@@ -2,114 +2,149 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
 }
 
 body {
-    background: #f8f8f8;
+    background: #f6f6f6;
     color: #333;
 }
 
 /* HERO */
 .hero {
-    background: url("img/bg.jpg") center/cover no-repeat;
-    padding: 80px 20px;
-    color: white;
     text-align: center;
+    padding: 40px 20px;
+    background: white;
 }
 
-.hero-content {
-    max-width: 500px;
-    margin: auto;
-    background: rgba(0,0,0,0.5);
-    padding: 20px;
-    border-radius: 10px;
+.logo-principal {
+    width: 260px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-sub {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.8;
 }
 
 .btn-whatsapp {
     display: inline-block;
-    padding: 15px 25px;
     background: #25d366;
+    padding: 14px 30px;
     color: white;
-    margin-top: 20px;
     text-decoration: none;
-    border-radius: 8px;
     font-size: 18px;
-    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-.btn-instagram {
-    display: inline-block;
-    padding: 15px 25px;
-    background: #d6249f;
-    color: white;
-    margin-top: 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
+/* CARROSSEL */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 14px;
 }
 
-/* SERVICES */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* SERVIÇOS */
 .services {
-    padding: 40px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .services-grid {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
 }
 
 .service-card {
-    padding: 20px;
     background: white;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* PORTFOLIO */
+/* PORTFÓLIO */
 .portfolio {
     padding: 40px 20px;
+    text-align: center;
 }
 
 .portfolio-grid {
+    margin-top: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .portfolio-grid img {
     width: 100%;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* CTA FINAL */
 .cta-final {
-    background: #fff;
+    background: white;
     padding: 50px 20px;
     text-align: center;
+    margin-top: 40px;
 }
 
 .cta-buttons {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    justify-content: center;
 }
 
-/* RESPONSIVIDADE */
-@media (min-width: 768px) {
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .portfolio-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .cta-buttons {
-        flex-direction: row;
-        justify-content: center;
-    }
+.btn-instagram {
+    display: inline-block;
+    background: #d6249f;
+    padding: 14px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
 }
