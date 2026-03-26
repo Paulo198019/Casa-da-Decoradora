@@ -12,4 +12,5 @@ function moveCarousel(step) {
     slider.style.transform = `translateX(${-index * 100}%)`;
 }
 
-setInterval(() => moveCarousel(1), 4000);
+setInterval(() => moveCarousel(1), 3500);
+``
