@@ -1,41 +1,17 @@
+let index = 0;
 
-// Número de WhatsApp atualizado
-const WHATSAPP_NUMBER = "5511967500305";
+function moveCarousel(step) {
+    const slider = document.getElementById("carousel");
+    const items = document.querySelectorAll(".carousel-item");
 
-// Texto padrão de CTA
-const defaultText = encodeURIComponent(
-  "Olá! Vim pelo site da Casa da Decoradora e gostaria de um orçamento."
-);
+    index += step;
 
-// Gera link do WhatsApp
-function whatsLink(custom) {
-  const text = custom ? encodeURIComponent(custom) : defaultText;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+    if (index < 0) index = items.length - 1;
+    if (index >= items.length) index = 0;
+
+    slider.style.transform = `translateX(${-index * 100}%)`;
 }
 
-// Aponta todos os CTAs para o WhatsApp
-["ctaHeader", "ctaHero", "ctaFooter", "ctaFloat"].forEach(id => {
-  const el = document.getElementById(id);
-  if (el) el.setAttribute("href", whatsLink());
-});
-
-// Formulário → enviar para WhatsApp
-const form = document.getElementById("orcamentoForm");
-if (form) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const nome = data.get("nome") || "";
-    const evento = data.get("evento") || "";
-    const quando = data.get("data") || "";
-    const local = data.get("local") || "";
-    const mensagem = data.get("mensagem") || "";
-
-    const msg = `Olá! Sou ${nome}. Quero orçamento para *${evento}*.
-Data: ${quando || "a definir"}
-Local: ${local || "a definir"}
-Detalhes: ${mensagem}`;
-
-    window.open(whatsLink(msg), "_blank");
-  });
-}
+setInterval(() => {
+    moveCarousel(1);
+}, 3500);
