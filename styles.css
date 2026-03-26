@@ -6,158 +6,143 @@
     font-family: "Arial", sans-serif;
 }
 
-/* BODY */
 body {
-    background: #fafafa;
+    background: #f7f7f7;
     color: #333;
     line-height: 1.5;
 }
 
-/* ----------------------------- */
-/* ✅ HERO (TOPO PROFISSIONAL)   */
-/* ----------------------------- */
+/* HERO */
 .hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
     background: white;
 }
 
-.hero img {
-    width: 380px;              /* ✅ AUMENTEI O LOGO */
-    margin-bottom: 25px;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
+.logo {
+    width: 380px;
+    margin-bottom: 20px;
 }
 
 .hero-title {
-    font-size: 34px;           /* ✅ AUMENTADO */
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 15px;
-    color: #333;
+    margin-bottom: 20px;
 }
 
 .hero-sub {
+    font-size: 22px;
     max-width: 900px;
     margin: 0 auto;
-    font-size: 20px;           /* ✅ MAIS VISÍVEL */
     opacity: 0.9;
-    margin-top: 10px;
+    line-height: 1.6;
 }
 
 .btn-whatsapp {
-    display: inline-block;
     background: #25d366;
     padding: 16px 40px;
-    color: white;
-    text-decoration: none;
+    margin-top: 25px;
     border-radius: 8px;
     font-size: 20px;
-    margin-top: 25px;
-    font-weight: bold;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
 }
 
-/* ----------------------------- */
-/* ✅ CARROSSEL                  */
-/* ----------------------------- */
+/* CARROSSEL */
 .carousel-container {
     width: 90%;
     margin: 40px auto;
+    border-radius: 12px;
     overflow: hidden;
-    border-radius: 14px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 400px;              /* ✅ REDUZIDO - tamanho profissional */
+    height: 380px;
     object-fit: cover;
-    border-radius: 12px;
 }
 
 .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.45);
+    background: black;
     color: white;
-    border: none;
-    padding: 10px 14px;
-    font-size: 22px;
-    cursor: pointer;
+    padding: 10px 15px;
     border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    opacity: 0.6;
 }
 
-/* ----------------------------- */
-/* ✅ BENEFÍCIOS / TIPOS DE EVENTOS */
-/* ----------------------------- */
-.benefits, .event-types {
-    background: white;
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* BENEFÍCIOS */
+.benefits {
     padding: 50px 20px;
-    text-align: center;
+    background: white;
     margin-top: 40px;
-}
-
-.benefits h2, .event-types h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 .benefits-list li {
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0;
+}
+
+/* EVENTOS */
+.event-types {
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .event-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .event-card {
-    background: #ffffff;
+    background: white;
     padding: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    font-size: 20px;
+    border-radius: 12px;
 }
 
-/* ----------------------------- */
-/* ✅ PORTFÓLIO AJUSTADO         */
-/* ----------------------------- */
+/* PORTFÓLIO */
 .portfolio {
     padding: 50px 20px;
     text-align: center;
 }
 
-.portfolio h2 {
-    font-size: 28px;
-}
-
 .portfolio-grid {
-    margin-top: 25px;
+    margin-top: 40px;
     display: grid;
-    gap: 18px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .portfolio-grid img {
     width: 100%;
-    height: 240px;             /* ✅ ALTURA FIXA E PROFISSIONAL */
+    height: 240px;
     object-fit: cover;
     border-radius: 12px;
-    transition: 0.3s;
 }
 
-.portfolio-grid img:hover {
-    transform: scale(1.05);
-}
-
-/* ----------------------------- */
-/* ✅ CTAs FINAIS                */
-/* ----------------------------- */
+/* CTA FINAL */
 .cta-final {
-    text-align: center;
-    background: #ffffff;
     padding: 60px 20px;
-    margin-top: 40px;
+    background: white;
+    text-align: center;
 }
 
 .cta-final h2 {
@@ -167,43 +152,21 @@ body {
 
 .cta-final p {
     font-size: 20px;
-    opacity: 0.8;
 }
 
 .cta-buttons {
     margin-top: 25px;
     display: flex;
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
 }
 
 .btn-instagram {
     background: #d6249f;
     padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 20px;        /* ✅ AUMENTADO */
-    font-weight: bold;
 }
-
-/* ----------------------------- */
-/* ✅ RESPONSIVO                 */
-/* ----------------------------- */
-@media (max-width: 768px) {
-
-    .hero-title { font-size: 26px; }
-    .hero-sub { font-size: 18px; }
-
-    .carousel-item img {
-        height: 300px;     /* menor no celular */
-    }
-
-    .portfolio-grid img {
-        height: 200px;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-    }
-}
+``
