@@ -35,40 +35,21 @@
 }
 
 
-/* ✅ PADRONIZAÇÃO TOTAL DAS IMAGENS */
-.image-box {
-    width: 100%;
-    max-width: 1000px;
-    height: 350px;       /* ✅ padrão entre carrossel e portfólio */
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #ffffff;
-}
-
-.image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    /* ✅ padronizado */
-    border-radius: 12px;
-}
-
-
-/* ✅ CARROSSEL */
+/* ✅ CARROSSEL PADRONIZADO */
 .carousel-container {
     max-width: 1000px;
     margin: 40px auto;
 }
 
-.carousel-item .image-box {
-    height: 350px !important;
+.carousel-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 
-/* BENEFÍCIOS */
+/* ✅ BENEFÍCIOS */
 .benefits {
     padding: 40px;
     text-align: center;
@@ -92,8 +73,15 @@
     gap: 20px;
 }
 
+.portfolio-img {
+    width: 30%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
 
-/* RODAPÉ */
+
+/* ✅ RODAPÉ CORPORATIVO */
 .footer {
     margin-top: 60px;
     padding: 40px;
@@ -103,6 +91,8 @@
 }
 
 .footer-icon {
-    width: 35px;
+    width: 40px;
     margin: 10px;
+    filter: brightness(1.2);
 }
+``
