@@ -1,6 +1,5 @@
 // Carrossel automático
-const myCarousel = document.querySelector('#decorCarousel');
-new bootstrap.Carousel(myCarousel, {
+new bootstrap.Carousel('#decorCarousel', {
     interval: 2500,
     ride: "carousel"
 });
