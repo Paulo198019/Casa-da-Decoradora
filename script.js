@@ -1,5 +1,8 @@
-// Carrossel automático
-new bootstrap.Carousel('#decorCarousel', {
-    interval: 2500,
-    ride: "carousel"
+document.addEventListener("DOMContentLoaded", () => {
+    new bootstrap.Carousel('#decorCarousel', {
+        interval: 2600,
+        ride: 'carousel',
+        pause: false,
+        wrap: true
+    });
 });
