@@ -29,13 +29,12 @@
     font-size: 18px;
 }
 
-.btn-whatsapp img {
+.icon-btn {
     width: 22px;
     margin-right: 8px;
 }
 
-
-/* ✅ CARROSSEL PADRONIZADO */
+/* ✅ CARROSSEL */
 .carousel-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -48,7 +47,6 @@
     border-radius: 12px;
 }
 
-
 /* ✅ BENEFÍCIOS */
 .benefits {
     padding: 40px;
@@ -60,13 +58,7 @@
     font-size: 20px;
 }
 
-
 /* ✅ PORTFÓLIO */
-.portfolio {
-    padding: 40px;
-    text-align: center;
-}
-
 .portfolio-grid {
     display: flex;
     justify-content: center;
@@ -74,14 +66,13 @@
 }
 
 .portfolio-img {
-    width: 30%;
+    width: 32%;
     height: 350px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-
-/* ✅ RODAPÉ CORPORATIVO */
+/* ✅ RODAPÉ */
 .footer {
     margin-top: 60px;
     padding: 40px;
@@ -93,6 +84,4 @@
 .footer-icon {
     width: 40px;
     margin: 10px;
-    filter: brightness(1.2);
 }
-``
