@@ -5,80 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Santos Decor - Decorações Premium</title>
 
-    <!-- Bootstrap CSS -->
-    https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
-    <!-- Seu CSS -->
-    styles.css
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- ✅ CABEÇALHO FIXO -->
+    <header class="header-fixed">
+        <img src="logo.png" class="header-logo" alt="Lucas Santos Decor">
+        <nav class="header-menu">
+            <a href="#carousel">Início</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="https://wa.me/5511967500305" target="_blank">Contato</a>
+        </nav>
+    </header>
+
+
     <!-- ✅ HERO -->
-    <header class="hero">
-        logo.png
+    <section class="hero">
+        <img src="logo.png" class="hero-logo" alt="Logo">
 
         <h1 class="hero-title">Transformamos Momentos em Memórias Inesquecíveis</h1>
 
         <p class="hero-sub">
             Celebre em grande estilo! Nossa empresa é especializada em criar experiências únicas através da decoração
-            de festas de aniversário, casamentos, chá revelação, eventos corporativos, formaturas e muito mais. Cada detalhe 
-            é planejado com carinho, criatividade e sofisticação para que o seu evento seja exatamente como você sempre sonhou 
-            — ou ainda melhor.
+            de festas de aniversário, casamentos, chá revelação, eventos corporativos, formaturas e muito mais.
         </p>
 
-        https://wa.me/5511967500305
-            whatsapp.png Chamar no WhatsApp
+        <a href="https://wa.me/5511967500305" class="btn-whatsapp">
+            <img src="whatsapp.png" class="icon-btn"> Chamar no WhatsApp
         </a>
-    </header>
+    </section>
 
 
+    <!-- ✅ CARROSSEL PREMIUM -->
+    <section id="carousel" class="carousel-container">
+        <div id="decorCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- ✅ CARROSSEL -->
-    <section class="carousel-container">
-        <div id="decorCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
-            
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    aniversario1.png
+                    <img src="aniversario1.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario2.png
+                    <img src="aniversario2.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario3.png
+                    <img src="aniversario3.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario4.png
+                    <img src="aniversario4.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario5.png
+                    <img src="aniversario5.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario6.png
+                    <img src="aniversario6.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario7.png
+                    <img src="aniversario7.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario8.png
+                    <img src="aniversario8.png" class="carousel-image">
                 </div>
 
                 <div class="carousel-item">
-                    aniversario9.png
+                    <img src="aniversario9.png" class="carousel-image">
                 </div>
 
             </div>
 
-            <!-- Botões -->
+            <!-- Controles -->
             <button class="carousel-control-prev" type="button" data-bs-target="#decorCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
@@ -91,13 +103,11 @@
     </section>
 
 
-
-
     <!-- ✅ BENEFÍCIOS -->
-    <section class="benefits">
+    <section id="beneficios" class="benefits">
         <h2 class="big-title">Por que escolher a nossa decoração?</h2>
 
-        <ul class="benefits-list big-text">
+        <ul class="benefits-list">
             <li>✅ Projetos personalizados para cada tipo de evento</li>
             <li>✅ Combinação perfeita entre design, modernidade e elegância</li>
             <li>✅ Montagem ágil, organizada e profissional</li>
@@ -107,48 +117,46 @@
     </section>
 
 
-
-    <!-- ✅ PORTFÓLIO -->
-    <section class="portfolio">
+    <!-- ✅ GALERIA PORTFÓLIO COM ZOOM -->
+    <section id="portfolio" class="portfolio">
         <h2 class="big-title">Portfólio Completo</h2>
 
         <div class="portfolio-grid">
-            aniversario1.png
-            aniversario2.png
-            aniversario3.png
+            <a href="aniversario1.png" data-lightbox="galeria"><img src="aniversario1.png" class="portfolio-img"></a>
+            <a href="aniversario2.png" data-lightbox="galeria"><img src="aniversario2.png" class="portfolio-img"></a>
+            <a href="aniversario3.png" data-lightbox="galeria"><img src="aniversario3.png" class="portfolio-img"></a>
         </div>
     </section>
 
 
-
-    <!-- ✅ RODAPÉ -->
+    <!-- ✅ RODAPÉ PREMIUM -->
     <footer class="footer">
         <p class="footer-title">Lucas Santos Decor</p>
         <p class="footer-copy">Transformando eventos em memórias inesquecíveis.</p>
 
         <div class="footer-socials">
-
-            <!-- WhatsApp -->
-            https://wa.me/5511967500305
-                whatsapp.png
+            <a href="https://wa.me/5511967500305" target="_blank">
+                <img src="whatsapp.png" class="footer-icon" alt="WhatsApp">
             </a>
 
-            <!-- Instagram -->
-            https://www.instagram.com/lucassantosdecorgru/
-                instagram.png
+            <a href="https://www.instagram.com/lucassantosdecorgru/" target="_blank">
+                <img src="instagram.png" class="footer-icon" alt="Instagram">
             </a>
-
         </div>
 
         <p class="footer-rights">© 2024 Lucas Santos Decor — Todos os direitos reservados.</p>
     </footer>
 
 
-    <!-- Bootstrap JS -->
-    https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js>
+    <!-- ✅ BOTÃO WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5511967500305" target="_blank" class="whats-float">
+        <img src="whatsapp.png" class="whats-float-icon">
+    </a>
 
-    <!-- Script principal -->
-    script.js
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
